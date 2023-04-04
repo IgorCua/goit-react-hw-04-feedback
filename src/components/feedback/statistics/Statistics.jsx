@@ -1,7 +1,7 @@
 import style from "./Statistics.module.css";
 
 export const Statistics = (props) => {
-    const {good, neutral, bad} = props.state;
+    const {good, neutral, bad} = props.feedbacks;
     const {countTotalFeedback, countPositiveFeedbackPercentage} = props;
     
     return (
