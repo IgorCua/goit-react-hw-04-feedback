@@ -1,0 +1,7 @@
+.btn{
+    height: 30px;
+}
+
+.btn:not(:last-child){
+    margin-right: 15px;
+}
