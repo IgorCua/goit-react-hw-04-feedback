@@ -2,21 +2,19 @@ import { Component } from "react";
 import { Feedback } from "./feedback/Feedback";
 
 
-export class App extends Component {
-  render() {
-    return (
-      <div
-        style={{
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          fontSize: 40,
-          color: '#010101'
-        }}
-      >
-      <Feedback state={this.state}/>
-      </div>
-    )
-  };
+export const App = () => {
+  return (
+    <div
+      style={{
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: 40,
+        color: '#010101'
+      }}
+    >
+    <Feedback/>
+    </div>
+  )
 };

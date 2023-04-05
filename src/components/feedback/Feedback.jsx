@@ -5,7 +5,7 @@ import { FeedbackOptions } from "./feedbackOptions/FeedbackOptions";
 import { Section } from "./section/Section";
 
 
-export const Feedback = (props) => {
+export const Feedback = () => {
     const [feedbacks, setFeedbacks] = useState(
         {
             good: 0,
@@ -25,7 +25,7 @@ export const Feedback = (props) => {
 
         return (good > 0 && feedbackSum > 0) ? `${Math.floor(good / feedbackSum * 100)}%` : 0;
     }
-    console.log(feedbacks)
+    // console.log(feedbacks)
         return (
             <Section title='Please leave feedback'>
                 <FeedbackOptions 
